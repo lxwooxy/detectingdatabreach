@@ -12,27 +12,51 @@ Regression: Predicting the scale of the breach based on the organization type an
 Classification: Predicting the method of breach based on the organization type and scale of the breach.
 
 ## Overview of the approach
-1. Data cleaning and preprocessing
-2. Exploratory data analysis
-3. Feature engineering
-4. Model building
-5. Model evaluation
+- [Data cleaning and preprocessing](#data-cleaning-and-preprocessing)
+- [Exploratory data analysis](#exploratory-data-analysis)
+- [Feature engineering](#feature-engineering)
+- [Model building](#model-building)
+- [Model evaluation](#model-evaluation)
 
 ## Overview of the dataset
 Entity: Name of the company that was breached. This could be useful in future iterations of the project to identify if there are any patterns in the names of the companies that are breached. (NLP)
+
 Year: Year in which the breach occurred. Some entries are non-numeric.
+
 Records: Number of records that were breached. Some entries are non-numeric.
+
 Organization type: Type of organization that was breached. This is a categorical variable. Some entries are similar but have different names.
+
 Method: Method of breach. This is a categorical variable. Some entries are similar but have different names.
+
 Sources: Hyperlinked sources to the articles that were used to collect the data.
 
 ## Data cleaning and preprocessing
 The Years column had some ill formatted entries. For example, some entries had the year as 2004-05, 2004-06, etc. In these cases, the rows were duplicated for each year in the range, and the number of records split evenly between the years.
 
+``` txt
+     Entity                                             Year            Records     Organization type   Method  
+ 
+94                                             EasyJet  2019-2020       13394400    transport           hacked    
+96   Earl Enterprises(Buca di Beppo, Earl of Sandwi...  2018-2019       2000000     restaurant          hacked    
+144                                      Hilton Hotels  2014 and 2015   363000      hotel               hacked  
+```
+Null values:  False
+Non numeric values:  True
+
+
 For the Records column, ill formatted entries were replaced with the mean of the organization type.
 
 ## Exploratory data analysis
-The dataset is not fully representative of real world data breaches – for example, looking at the healthcare industry alone, there are years where no entries were lost. Cursory research shows that this is not the case. This could be due to the fact that the dataset is not fully representative of all data breaches that have occurred in the past 15 years. It is also worth noting that the range of entries in the dataset are between 2004 and 2019, so more recent data breaches are not included.
+The dataset is not fully representative of real world data breaches – for example, looking at the healthcare industry alone, there are years where no entries were lost. Cursory research shows that this is not the case, although the spike in 2014-2015 is accurate.
+
+![Visualizing the given dataset](graphs/industryrecords.png)
+
+![Source: Healthcare Data Breach Statistics](https://www.hipaajournal.com/wp-content/uploads/2023/11/healthcare-data-breach-statistics-breached-records-2009-2023-oct.jpg)
+[Source](https://www.hipaajournal.com/healthcare-data-breach-statistics/)
+
+
+This could be due to the fact that the dataset is not fully representative of all data breaches that have occurred in the past 15 years. It is also worth noting that the range of entries in the dataset are between 2004 and 2019, so more recent data breaches are not included.
 
 ## Feature engineering
 The categorical variables were one-hot encoded. The numerical variables were scaled using the StandardScaler.
@@ -42,4 +66,5 @@ The features consist of the encoded categorical variables and the scaled numeric
 
 ## Model evaluation
 Classification – predicting the method of the data breach: The model performs relatively well with a 82.61% accuracy score. 
-Regression - predicting the scale of the breach: The model performs relatively well with a 0.89 MSE
+
+Regression - predicting the scale of the breach: The model performs relatively well with a 0.89 MSE.
