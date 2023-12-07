@@ -36,9 +36,9 @@ The Organization types were modified to group similar types together. for exampl
 
 A similar classification was done with the Methods column.
 
-For the Records column, ill formatted entries were replaced with the mean of the records with the same organization type.
+For the Records column, ill-formatted entries were replaced with the mean of the records with the same organization type.
 
-The Years column had some ill formatted entries. For example, some entries had the year as 2004-05, 2004-06, etc. In these cases, the rows were duplicated for each year in the range, and the number of records split evenly between the years.
+The Years column had some ill-formatted entries. For example, some entries had the years as 2004-05, 2004-06, etc. In these cases, the rows were duplicated for each year in the range, and the number of records was split evenly between the years.
 
 ``` txt
      Entity                                             Year            Records     Organization type   Method  
@@ -68,6 +68,11 @@ In both the real-world data and our given dataset, The loss/theft of healthcare 
 Healthcare data is so valuable because it often contains all of an individual's personally identifiable information, and a single healthcare data record can be worth up to $250 per record as compared to $5 for the next highest value record, which is card payment information. [Source: Trustwave](https://trustwave.azureedge.net/media/15350/2018-trustwave-global-security-report-prt.pdf?rnd=131992184400000000#page=31)
 
 As such, there are strict HIPAA (The Health Insurance Portability and Accountability Act) guidelines and rules regarding safeguarding healthcare data, and a healthcare company can be fined up to $50k per record for data lost in a data breach, not including civil monetary penalties to individuals affected by a breach. [Source: IBM](https://www.ibm.com/reports/data-breach)
+
+The main causes of healthcare data breaches are now hacking/IT incidents, with unauthorized access/disclosure incidents also commonplace.
+
+Hacking incidents increased significantly since 2015, as has the scale of data breaches. This is reflected in the given dataset, with hacking making up for over a third of healthcare data breaches, with poor security being the second highest contributor.
+![Visualizing the given dataset](graphs/healthcare_breach_causes.png)
 
 ## Feature engineering
 
