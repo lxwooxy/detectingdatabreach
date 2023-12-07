@@ -1,7 +1,7 @@
 # Detecting the next data breach
 
 ## Problem Statement
-The dataset df_1.csv is a mostly numeric, tabular dataset which contains over 351 company data breach data totaling 30,000 records.
+The dataset df_1.csv is a mostly numeric, tabular dataset that contains over 351 company data breach data totaling 30,000 records.
 There are 7 columns: Entity, year, records, organization type, method, sources, and id.
 
 The goal of the project is to leverage the dataset and develop an ML algorithm that can analyze the data and identify how the next data breach will occur. This will be particularly useful to companies that are looking to prevent data breaches from occurring in the future.
