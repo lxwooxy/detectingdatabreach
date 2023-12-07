@@ -32,6 +32,11 @@ Method: Method of breach. This is a categorical variable. Some entries are simil
 Sources: Hyperlinked sources to the articles that were used to collect the data.
 
 ## Data cleaning and preprocessing
+
+The Organization types were modified to group similar types together. for example, "telcoms", "telecom", and "telecomms" were converted to the parent group "telecommunications"
+
+For the Records column, ill formatted entries were replaced with the mean of the records with the same organization type.
+
 The Years column had some ill formatted entries. For example, some entries had the year as 2004-05, 2004-06, etc. In these cases, the rows were duplicated for each year in the range, and the number of records split evenly between the years.
 
 ``` txt
@@ -45,7 +50,7 @@ Null values:  False
 Non numeric values:  True
 
 
-For the Records column, ill formatted entries were replaced with the mean of the organization type.
+
 
 ## Exploratory data analysis
 The dataset is not fully representative of real world data breaches – for example, looking at the healthcare industry alone, there are years where no entries were lost. Cursory research shows that this is not the case, although the spike in 2014-2015 is accurate.
