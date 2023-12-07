@@ -64,8 +64,8 @@ The dataset might not be fully representative of real world data breaches – fo
 This could be because the dataset is not fully representative of all data breaches that have occurred in the past 15 years. It is also worth noting that the range of entries in the dataset is between 2004 and 2019, so more recent data breaches are not included.
 
 In both the real-world data and our given dataset, The loss/theft of healthcare records and electronically protected health information dominated the breach reports between 2009 and 2015. The move to digital record keeping, more accurate tracking of electronic devices, and more widespread adoption of data encryption have been key in reducing these data breaches.
-<img src="graphs/healthcare_2009.png" alt="Our healthcare data (2009)" width="30%" />
-<img src="graphs/healthcare_2011.png" alt="Our healthcare data (2011)" width="30%" />
+
+<img src="graphs/healthcare_2009.png" alt="Our healthcare data (2009)" width="30%" /><img src="graphs/healthcare_2011.png" alt="Our healthcare data (2011)" width="30%" />
 
 <img src="graphs/healthcare_2015.png" alt="Our healthcare data (2015)" width="30%" /><img src="graphs/healthcare_2021.png" alt="Our healthcare data (2021)" width="30%" />
 
