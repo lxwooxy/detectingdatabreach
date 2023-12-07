@@ -62,9 +62,8 @@ This could be due to the fact that the dataset is not fully representative of al
 The categorical variables were one-hot encoded. The numerical variables were scaled using the StandardScaler.
 
 ## Model building
-The features consist of the encoded categorical variables and the scaled numerical variables. The target variable is the method of the breach. The neural network consists of linear layers with activation functions. The MSE was used as the loss function, and the Adam optimizer is used to update the model's weights during training. The model was trained for 20 epochs, and cross validation was used to tune the model on different subsets of the data.
+The features consist of the encoded categorical variables and the scaled numerical variables. The target variable is the method of the breach. The neural network consists of linear layers with activation functions. The MSE was used as the loss function, and the Adam optimizer was used to update the model's weights during training. The model was trained for 20 epochs, and cross-validation was used to tune the model on different subsets of the data.
 
 ## Model evaluation
-Classification – predicting the method of the data breach: The model performs relatively well with a 82.61% accuracy score. 
+Classification – predicting the method of the data breach: The model performs relatively well with a 81.82% accuracy score. 
 
-Regression - predicting the scale of the breach: The model performs relatively well with a 0.89 MSE.
