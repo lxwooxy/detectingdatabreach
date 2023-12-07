@@ -67,8 +67,7 @@ In both the real-world data and our given dataset, The loss/theft of healthcare 
 <img src="graphs/healthcare_2009.png" alt="Our healthcare data (2009)" width="30%" />
 <img src="graphs/healthcare_2011.png" alt="Our healthcare data (2011)" width="30%" />
 
-<img src="graphs/healthcare_2015.png" alt="Our healthcare data (2015)" width="30%" />
-<img src="graphs/healthcare_2021.png" alt="Our healthcare data (2021)" width="30%" />
+<img src="graphs/healthcare_2015.png" alt="Our healthcare data (2015)" width="30%" /><img src="graphs/healthcare_2021.png" alt="Our healthcare data (2021)" width="30%" />
 
 
 Healthcare data is so valuable because it often contains all of an individual's personally identifiable information, and a single healthcare data record can be worth up to $250 per record as compared to $5 for the next highest value record, which is card payment information. [Source: Trustwave](https://trustwave.azureedge.net/media/15350/2018-trustwave-global-security-report-prt.pdf?rnd=131992184400000000#page=31)
