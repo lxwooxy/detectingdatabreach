@@ -67,7 +67,7 @@ In both the real-world data and our given dataset, The loss/theft of healthcare 
 
 Healthcare data is so valuable because it often contains all of an individual's personally identifiable information, and a single healthcare data record can be worth up to $250 per record as compared to $5 for the next highest value record, which is card payment information.
 
-As such, there are strict HIPAA (The Health Insurance Portability and Accountability Act) guidelines and rules regarding safeguarding healthcare data, and a healthcare company can be fined up to $50k per record for data lost in a data breach, not including civil monetary penalties to individuals affected by a breach. ![Source: Cost of a data breach - IBM](https://www.ibm.com/reports/data-breach)
+As such, there are strict HIPAA (The Health Insurance Portability and Accountability Act) guidelines and rules regarding safeguarding healthcare data, and a healthcare company can be fined up to $50k per record for data lost in a data breach, not including civil monetary penalties to individuals affected by a breach. [Source: Cost of a data breach - IBM](https://www.ibm.com/reports/data-breach)
 
 ## Feature engineering
 The categorical variables were one-hot encoded. The numerical variables were scaled using the StandardScaler.
