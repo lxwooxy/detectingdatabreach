@@ -72,7 +72,8 @@ As such, there are strict HIPAA (The Health Insurance Portability and Accountabi
 The main causes of healthcare data breaches are now hacking/IT incidents, with unauthorized access/disclosure incidents also commonplace.
 
 Hacking incidents increased significantly since 2015, as has the scale of data breaches. This is reflected in the given dataset, with hacking making up for over a third of healthcare data breaches, with poor security being the second highest contributor.
-![Visualizing the given dataset](graphs/healthcare_breach_causes.png)
+<img src="graphs/healthcare_breach_causes.png" alt="Visualizing the given dataset" width="50%" />
+
 
 ## Feature engineering
 
