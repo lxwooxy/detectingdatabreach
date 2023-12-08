@@ -58,7 +58,9 @@ The Methods column initially had 23 unique values, although many could be regrou
 
 <img src="/graphs/breachcauses.png" alt="After re-classification"/>
 
-Meanwhile, if a company is likely to lose their data through poor security or lost media, this can be managed with mandates in encrypting all their data, especially on removable disks like laptops and USB sticks, as well as more internal training for best practices in IT habits.
+For example, if a company is vulnerable to hacking from an active attacker, we can suggest they hire a white hat firm to probe their systems, and can then make recommendations on vulnerabilities within their system. So, they can prepare their systems by seeking recommendations from network security specialists.
+
+Meanwhile, if a company is likely to lose its data through poor security or lost media, this can be managed with mandates to encrypt all their data, especially on removable disks like laptops and USB sticks, as well as more internal training for best practices in IT habits. 
 
 
 
