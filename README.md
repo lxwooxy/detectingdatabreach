@@ -13,7 +13,7 @@ Classification: Predicting the method of breach based on the organization, entit
 ## Overview of the approach
 - [Data cleaning and preprocessing](#data-cleaning-and-preprocessing)
 - [Exploratory data analysis](#exploratory-data-analysis)
-- [Feature engineering](#feature-engineering)
+- [Feature selection](#feature-selection)
 - [Model building](#model-building)
 - [Model evaluation](#model-evaluation)
 
@@ -38,7 +38,7 @@ A similar classification was done with the Methods column.
 
 For the Records column, ill-formatted entries were replaced with the mean of the records with the same organization type.
 
-The Years column had some ill-formatted entries. For example, some entries had the years as 2004-05, 2004-06, etc. In these cases, the rows were duplicated for each year in the range, and the number of records was split evenly between the years.
+The Years column had some ill-formatted entries. For example, some entries marked the years as 2004-05, 2004-06, etc. In these cases, the rows were duplicated for each year in the range, and the number of records was split evenly between the years.
 
 ``` txt
      Entity                                             Year            Records     Organization type   Method  
@@ -53,7 +53,7 @@ Non numeric values:  True
 
 
 ## Exploratory data analysis
-The dataset might not be fully representative of real world data breaches – for example, looking at the healthcare industry alone, there are years where no entries were lost. Cursory research shows that this is not the case, although the spike in 2014-2015 is accurate, and the steady increase thereafter.
+The dataset might not be fully representative of real-world data breaches – for example, looking at the healthcare industry alone, there are years where no entries were lost. Cursory research shows that this is not the case, although the spike in 2014-2015 is accurate, and the steady increase thereafter.
 
 ![Visualizing the given dataset](graphs/industryrecords.png)
 
@@ -76,12 +76,12 @@ As such, there are strict HIPAA (The Health Insurance Portability and Accountabi
 
 The main causes of healthcare data breaches are now hacking/IT incidents, with unauthorized access/disclosure incidents also commonplace.
 
-Hacking incidents increased significantly since 2015, as has the scale of data breaches. This is reflected in the given dataset, with hacking making up for over a third of healthcare data breaches, with poor security being the second highest contributor.
+Hacking incidents increased significantly since 2015, as has the scale of data breaches. This is reflected in the given dataset, with hacking making up for over a third of healthcare data breaches, with poor security being the second-highest contributor.
 <img src="graphs/healthcare_breach_causes.png" alt="Visualizing the given dataset" width="30%" />
 
 
-## Feature engineering
-
+## Feature selection
+The Sources and Index columns were dropped, and we will use the Entity, Organization Type, Year, and Records as features.
 
 ## Model building
 
