@@ -97,7 +97,6 @@ The Sources and Index columns were dropped, and we will use the Entity, Organiza
 
 ## Model building
 
-
 ## Model evaluation
 Classification – predicting the method of the data breach: The model performs relatively well with an 81.82% accuracy score and a 0.29 Validation Loss.
 
