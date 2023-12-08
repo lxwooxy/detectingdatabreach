@@ -97,11 +97,13 @@ The Sources and Index columns were dropped, and we will use the Entity, Organiza
 
 ## Model building
 
+<img src="neural_network_graph_custom_labeled.png" alt="NN"/>
+
 The values from the dataframe are encoded with integer values. After standardizing the features and using pytorch to convert both the features and label into pytorch tensors. I used Pytorch's nn.Sequential module, which consists of these 4 hidden layers with ReLU activation functions. The hidden layers and the activation function transform the input data and introduce non-linearity to the network to capture different features or representations of the input data, meaning it can model complex relationships between the data, and learn and represent intricate patterns.
 
 For the actual training of the model, I've trained the model on the training sets iteratively, and used cross-validation. For each fold the model is split into a training and validation set, where in training, for each epoch the model sees the training example once and updates its parameters based on the computed loss. The validation set then assesses the model's performance. I've also built in an early stopping feature where if the validation loss doesn't improve after 2 iterations, that training loop is stopped early. I used that to decide how many epochs to use, which is how I ended up deciding on 75 epochs.
 
 ## Model evaluation
 Classification – predicting the method of the data breach: 
-This is my model's final results, which predicts the method of data breach with an 81% success rate, and a low validation loss of 0.29, which measures how the model performs on data it has not seen during its training
+My model's final results, which predicts the method of data breach, has a 81.82% success rate, and a low validation loss of 0.29, which measures how the model performs on data it has not seen during its training.
 
