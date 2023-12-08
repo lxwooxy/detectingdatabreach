@@ -50,6 +50,12 @@ The Years column had some ill-formatted entries. For example, some entries marke
 Null values:  False
 Non numeric values:  True
 
+The Methods column initially had 23 unique values, although many could be regrouped into the same class. Having the individual methods be separate created issues with training the model – especially on a relatively small dataset with 350 entries, there would not have been enough data to train a model to accurately predict one of 23 methods. For example, "unsecured_s3_bucket" could be classified under "poor_security", and "stolen laptop" and "lost/stolen laptop" could be classified under "stolen_media". This reclassification was done for 2 reasons:
+1) With the 23 unique methods, the "hacked" entries lay as a statistical outlier, as can be seen in this graph with its error bars (lower bound of the hacked bar being disconnected from the upper bounds of the other method bars)
+
+[Before re-classification](/graphs/before_classes.png)
+3) 
+
 
 
 ## Exploratory data analysis
