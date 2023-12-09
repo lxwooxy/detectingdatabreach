@@ -53,7 +53,7 @@ Non numeric values:  True
 The Methods column initially had 23 unique values, although many could be regrouped into the same class. Having the individual methods be separate created issues with training the model – especially on a relatively small dataset with 350 entries, there would not have been enough data to train a model to accurately predict one of 23 methods. For example, "unsecured_s3_bucket" could be classified under "poor_security", and "stolen laptop" and "lost/stolen laptop" could be classified under "stolen_media". This reclassification was done for 2 reasons:
 1) With the 23 unique methods, the "hacked" entries lay as a statistical outlier, as can be seen in this graph with its error bars (lower bound of the hacked bar being disconnected from the upper bounds of the other method bars)
 
-<img src="/graphs/before_classes.png" alt="Before re-classification"/>
+<img src="/graphs/before.png" alt="Before re-classification"/>
 2) The subsets of the 5 classes that result from the re-classification can be addressed with the same recommendations. For example, if a company is vulnerable to hacking from an active attacker, we can suggest they hire a white hat firm to probe their systems, and can then make recommendations on vulnerabilities within their system. So, they can prepare their systems by seeking recommendations from network security specialists.
 
 <img src="/graphs/breachcauses.png" alt="After re-classification"/>
