@@ -97,7 +97,7 @@ The Sources and Index columns were dropped, and we will use the Entity, Organiza
 
 ## Model building
 
-<img src="neural_network_graph_custom_labeled.png" alt="NN"/>
+<img src="graphs/neural_network_graph_custom_labeled.png" alt="NN"/>
 
 The values from the dataframe are encoded with integer values. After standardizing the features and using pytorch to convert both the features and label into pytorch tensors. I used Pytorch's nn.Sequential module, which consists of these 4 hidden layers with ReLU activation functions. The hidden layers and the activation function transform the input data and introduce non-linearity to the network to capture different features or representations of the input data, meaning it can model complex relationships between the data, and learn and represent intricate patterns.
 
